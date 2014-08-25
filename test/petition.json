@@ -1,0 +1,203 @@
+{
+   "autoFastAction":false,
+   "confirmation":{
+      "action":"DisplayContent",
+      "email_from_address":"",
+      "email_from_name":"",
+      "email_html_content":"<p>Dear {{FirstName,DefaultTo=Friend}},</p><br /><p>Thank you for joining our campaign.</p><span style=\"font-weight:bold\">Contact Information:<br/>{{FullName,DefaultTo=}}<br/>{{AddressLine1,DefaultTo=}}<br/>{{AddressLine2,DefaultTo=}}<br/>{{City,DefaultTo=}}&nbsp; {{StateProvince,DefaultTo=}}&nbsp;{{PostalCode,DefaultTo=}}</span>",
+      "page_content":"<p>Dear {{FirstName,DefaultTo=Friend}},</p><br /><p>Thank you for joining our campaign.</p><span style=\"font-weight:bold\">Contact Information:<br/>{{FullName,DefaultTo=}}<br/>{{AddressLine1,DefaultTo=}}<br/>{{AddressLine2,DefaultTo=}}<br/>{{City,DefaultTo=}}&nbsp; {{StateProvince,DefaultTo=}}&nbsp;{{PostalCode,DefaultTo=}}</span>",
+      "page_title":"test petition form",
+      "email_is_enabled":false,
+      "email_plaintext_content":"Dear {{FirstName,DefaultTo=Friend}},\r\n\r\nThank you for joining our campaign.    \r\n\r\nContact Information:    \r\n{{FullName,DefaultTo=}}  \r\n{{AddressLine1,DefaultTo=}}  \r\n{{AddressLine2,DefaultTo=}}  \r\n{{City,DefaultTo=}} {{StateProvince,DefaultTo=}} {{PostalCode,DefaultTo=}}",
+      "email_reply_to_address":"",
+      "email_send_installment":false,
+      "email_subject":""
+   },
+   "created":"2014-08-19 21:11:13Z",
+   "fastAction":false,
+   "form_elements":[
+      {
+         "name":"HeaderHtml",
+         "type":"markup",
+         "markup":"<h1>\r\n\tAdd your voice by signing this petition.</h1>\r\n"
+      },
+      {
+         "name":"ContactInformation",
+         "title":"Contact Information",
+         "type":"fieldset",
+         "children":[
+            {
+               "name":"FirstName",
+               "title":"First Name",
+               "type":"textfield",
+               "required":true,
+               "maxlength":50,
+               "queryString":"fn"
+            },
+            {
+               "name":"LastName",
+               "title":"Last Name",
+               "type":"textfield",
+               "required":true,
+               "maxlength":50,
+               "queryString":"ln"
+            },
+            {
+               "name":"AddressLine1",
+               "title":"Address Line 1",
+               "type":"textfield",
+               "required":true,
+               "maxlength":100,
+               "queryString":"add1"
+            },
+            {
+               "name":"AddressLine2",
+               "title":"Address Line 2",
+               "type":"textfield",
+               "maxlength":100,
+               "queryString":"add2"
+            },
+            {
+               "name":"City",
+               "title":"City",
+               "type":"textfield",
+               "required":true,
+               "maxlength":50,
+               "queryString":"ci"
+            },
+            {
+               "name":"StateProvince",
+               "title":"State or Province",
+               "type":"select",
+               "required":true,
+               "queryString":"st",
+               "options":"states"
+            },
+            {
+               "name":"PostalCode",
+               "title":"Zip/Postal Code",
+               "type":"textfield",
+               "required":true,
+               "maxlength":15,
+               "queryString":"pc",
+               "validation":"postalCode"
+            },
+            {
+               "name":"HomePhone",
+               "title":"Home Phone",
+               "type":"textfield",
+               "maxlength":25,
+               "queryString":"hp",
+               "validation":"phone"
+            },
+            {
+               "name":"EmailAddress",
+               "title":"Email",
+               "type":"textfield",
+               "required":true,
+               "maxlength":100,
+               "queryString":"em",
+               "validation":"email"
+            },
+            {
+               "name":"YesSignMeUpForUpdatesForBinder",
+               "value":true,
+               "type":"hidden",
+               "queryString":"ae"
+            }
+         ]
+      },
+      {
+         "name":"EmployerInformation",
+         "title":"Employer Information",
+         "type":"fieldset",
+         "children":[
+            {
+               "name":"Employer",
+               "title":"Employer",
+               "type":"textfield",
+               "maxlength":150,
+               "queryString":"ep"
+            },
+            {
+               "name":"WorkStateProvince",
+               "title":"Work State/Province",
+               "type":"select",
+               "queryString":"ws",
+               "options":"states",
+               "default_value":"ID"
+            }
+         ]
+      },
+      {
+         "name":"MarketSource",
+         "value":"",
+         "type":"hidden",
+         "queryString":"ms"
+      },
+      {
+         "name":"MailingId",
+         "value":"",
+         "type":"hidden",
+         "queryString":"midqs"
+      },
+      {
+         "name":"TrackingPixel",
+         "type":"markup",
+         "markup":"<img alt=\" \" src='https://devact11.myngp.com/fo/-5404319552844595200' />"
+      },
+      {
+         "name":"submitForm",
+         "type":"submit",
+         "value":"Submit"
+      }
+   ],
+   "formId":181,
+   "googleAnalytics":"",
+   "metadata":{
+      "hideCompletedFormSections":false,
+      "layoutStyle":"standard",
+      "displayConfirmationMessage":false,
+      "deactivationHtmlContent":"Sorry, the page you are trying to access is not accepting submissions at this time.",
+      "columns":1
+   },
+   "metatags":[
+      {
+         "property":"og:title",
+         "content":"test petition form"
+      },
+      {
+         "property":"fb:app_id",
+         "content":"220094691351419"
+      },
+      {
+         "property":"og:url",
+         "content":"https://devact11.myngp.com/Forms/-5404319552844595200"
+      },
+      {
+         "property":"og:type",
+         "content":"article"
+      },
+      {
+         "property":"og:site_name",
+         "content":"act.myngp.com"
+      }
+   ],
+   "returnToWebsiteName":"",
+   "returnToWebsiteUrl":"",
+   "status":"Published",
+   "title":"test petition form",
+   "type":"PetitionForm",
+   "updated":"2014-08-25 16:23:45Z",
+   "url":{
+      "full":"https://devact11.myngp.com/Forms/-5404319552844595200",
+      "base":"https://devact11.myngp.com/",
+      "prefix":"",
+      "slug":""
+   },
+   "version":"00-00-00-00-00-09-E9-72",
+   "errors":[
+
+   ],
+   "resultCode":"Success"
+}
