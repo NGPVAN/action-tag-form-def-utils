@@ -5,6 +5,14 @@ var chai = require('chai').should();
 var petition = require("./petition.json");
 
 describe('Form definition utility', function () {
+
+  describe('find()', function () {
+    it('extracts right number of fields', function () {
+      var fnfield = fdu.find_field(petition.form_elements, 'FirstName');    
+      fnfield.title.should.equal('First Name');
+    });
+  });
+
   describe('fields()', function () {
     it('extracts right number of fields', function () {
       var fields = fdu.fields(petition.form_elements);
@@ -32,4 +40,5 @@ describe('Form definition utility', function () {
                          'submitForm' ]);
     });
   });
+
 });
