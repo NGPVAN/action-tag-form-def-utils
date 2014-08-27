@@ -7,7 +7,7 @@ var petition = require("./petition.json");
 describe('Form definition utility', function () {
 
   describe('find()', function () {
-    it('extracts right number of fields', function () {
+    it('finds field by name', function () {
       var fnfield = fdu.find_field(petition.form_elements, 'FirstName');    
       fnfield.title.should.equal('First Name');
     });
