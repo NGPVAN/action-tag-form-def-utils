@@ -1,6 +1,6 @@
 {
   "name": "formdefutils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ActionTag form definition utility functions",
   "main": "main.js",
   "scripts": {
