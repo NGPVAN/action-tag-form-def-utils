@@ -1,5 +1,4 @@
 var _ = require('lodash');
-var assert = require('chai').assert;
 
 function fields(tree){
   return _.reduce(tree, function (memo, value) {
