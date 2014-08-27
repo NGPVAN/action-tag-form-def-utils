@@ -1,7 +1,7 @@
 var _ = require('lodash');
 
 function fields(tree){
-  return _.reduce(tree, function (memo, value) {
+  return _.compact(_.reduce(tree, function (memo, value) {
     if (_.isObject(value)) {
       if (!value.children) {
         return memo.concat(value);
@@ -11,7 +11,7 @@ function fields(tree){
     } else {
       return memo;
     }
-  }, []);
+  }, []));
 }
 
 function find(tree, name, isFlat) {
